@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik&family=Sniglet&display=swap');
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  /*------------- Header ------------- */
+.header{
+  padding-bottom: 50px;
+  
+}
+
+.row1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-6{
+  flex:50%;
+}
+
+#col1{
+  padding-left:100px; 
+  padding-top:120px; 
+  justify-content: center;
+}
+
+#col1 h4{
+  color:#F44356;
+}
+
+#htext{
+  font-size: 50px;
+}
+#ptext{
+  padding-top:30px;
+  
+}
+#col1 .btn{
+  background:#F44356; 
+  color:white;
+  height: 50px;
+  margin-top:30px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.img-responsive{
+  width:100%; 
+  height:620px; 
+  padding:20px;
+  background-size: contain;
+}
+
+  /**--Contact Us form section in a modal --*/ 
+form{
+  display:block;
+  position:relative;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.modal-header{
+  border:0;
+  margin-bottom:-10px;
+  margin-top:10px;
+  margin-left:12px;
+}
+
+.modal-header .modal-title{
+  font-weight: bolder;
+  font-size:25px;
+}
+ 
+   span,.inputClass,.labelClass{
+    transition: transform ease-in-out 0.2s;
+    touch-action: manipulation;
+    box-sizing: border-box;
+  }
+
+.inputClass{
+    width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 10px 0;
+  display: block;
+  background-color: transparent;
+  outline: none;
+}
+
+.inputClass:focus + span, input:not(:placeholder-shown) + span{
+  transform: translateY(-2em);
+}
+
+.inputClass:focus +.labelClass, input:not(:placeholder-shown) + .labelClass{
+  transform: translateY(-2em);
+}
+
+form span{
+  letter-spacing: 0.05em;
+  position: absolute;
+  pointer-events: none;
+  font-size: 15px;
+  padding: 10px 0;
+  left:0;      /*--Here is the trick with top and left --*/
+  top:10px;
+  color:#999;
+  -webkit-transition:all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+}
+
+form .labelClass{
+  
+  letter-spacing: 0.05em;
+  position:relative;
+  pointer-events: none;
+  font-size: 15px;
+  padding: 0px 0px;
+  left:0px;      /*--Here is the trick with top and left --*/
+  top:-25px;
+  color:#999;
+  -webkit-transition:all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+}
+
+.form-check-input:active, .form-check-input:checked{
+  background:#F44356 ;
+  outline: none;
+  border: #F44356 ;
+  box-shadow: none;
+}
+
+  /*------------- Section 1 ------------- */
+  .sect1{
+    background: whitesmoke;
+    width:100%;
+  }
+
+  .sect1 .container1{
+    padding-right:50px; 
+    margin-left: 100px;
+  }
+
+  .row2{
+    display:flex;
+    flex:flex-wrap;
+  }
+  
+  .row2 .col-sm-5{
+    flex: 50%;
+  }
+  
+  .row2 .col-sm-7{
+    flex: 70%;
+  }
+
+  .sect1 h5{
+    color:#F44356; 
+    padding-top:50px;
+    padding-bottom: 10px;
+  }
+
+  .sect1 h2{
+    font-size:45px;
+  }
+
+  .sect1 p{
+    width:70%
+  }
+
+  /*------- Image Carousel Section ------ */
+.autoplay{
+  padding: 40px;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+.autoplay .imgSlide{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.autoplay .imgSlide img{
+  width:280px; 
+  height:420px;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 280px;
+  opacity: 0;
+  transition: .5s ease;
+  background:#F44356;
+  justify-content: center;
+  text-align: center;
+  color:white;
+  overflow: hidden;
+}
+
+.autoplay .imgSlide .overlay .overlayImage{
+  width: 100px; 
+  height: 100px;
+  padding-top: 50px;
+  margin-top:20px;
+  margin-left:85px;
+}
+
+.overlay .overlayTitle{
+  padding: 20px;
+  color:white;
+}
+
+.overlay .overlayText{
+  width:250px;
+  margin-left: 15px; 
+}
+
+.overlay button{
+  margin:20px; 
+  background: white; 
+  color:#F44356; 
+  width: 200px; 
+  height:40px; 
+  font-weight: bolder !important;
+  border:none;
+}
+
+.imgSlide:hover .overlay {
+  opacity: 1;
+  
+}
+ /* ---Slider buttons --- */
+.slick-dots{
+  display:flex;
+  margin-top: 50px;
+  margin-left: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  position:absolute;
+  bottom:0;
+  right:82%;
+  justify-content: left;
+  border: none;
+  height: 50px;
+  
+}
+
+.slick-dots li{
+  margin: 0 0.6rem;
+  padding: 1rem 0;
+ 
+}
+
+.slick-dots button{
+  display: flex;
+  flex-wrap: wrap;
+  width: 0.7rem;
+  height: 0.7rem;
+  padding:0;
+  border:none;
+  background-color:white;
+  text-indent: -99999px;
+  border-radius:100%;
+  background:black;
+  align-items:flex-start;
+}
+
+.slick-dots li.slick-active button{
+transform: scale(2);
+box-shadow: 0px 3px 5px 1px rgba(221, 6, 6, 0);
+
+}
+
+/*------------- Section 2 ------------- */
+.sect2{
+  padding:50px 0px;
+  display: block;
+}
+
+.text-section{
+  justify-content: center;
+  }
+
+#h5text{
+  padding: 10px; 
+  color:#F44356;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#h1text{
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-8{
+  flex: 70%;
+}
+
+.col-4{
+  flex: 30%;
+}
+
+.col-8 .tableImage{
+margin-top:20px; 
+height: 550px;
+width:100%;
+background-size: contain;
+margin-left:10px;
+}
+
+.list-group{
+width: 350px;
+margin:20px 10px;
+}
+
+.list-group .list-group-item{
+padding:30px 50px;
+background:inherit;
+color:black;
+border:0.5px solid rgb(241, 240, 240);
+border-radius: 0;
+background: whitesmoke;
+}
+
+.list-group-item-action:active{
+background: #F44356 !important;
+color: white;
+outline: none;
+}
+
+.list-group-item-action:hover{
+  background: whitesmoke;
+}
+
+.list-group-item-action:focus{
+  background: #F44356;
+  color: white;
+  outline: none;
+
+  }
+
+/*------------- Section 3 ------------- */
+.sect3{
+  background:whitesmoke;
+}
+
+.sect3 .content{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 100px; 
+}
+.sect3 .content h5{
+  color: #F44356;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.sect3 .cardRow{
+  padding-bottom:100px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.sect3 .rect{
+  width:200px;
+  cursor: pointer;
+  
+}
+
+.sect3 .rect .card{
+  text-align: center;
+  transition:0.3s;
+  margin:10px 10px;
+}
+
+.sect3 .rect .card:hover{
+  transform: scale(1.1);
+}
+
+.sect3 .rect .card .cirlce{
+  padding-top:20px ;
+}
+
+.sect3 .rect .card .cirlce img{
+  width: 30px; 
+  height: 30px; 
+  margin:auto;
+}
+
+.sect3 .rect .card .cirlce p{
+  padding-bottom: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .img-responsive{
+    width: 100%;
+    height: 100%;
+  }
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+  #col1{
+    justify-content: center;
+  }
+
+  .autoplay{
+    display: 100%;
+    
+  }
+
+  .tableImage{
+    width: 50%;
+    margin-left:0;
+  }
+  
+}
+
+
