@@ -425,7 +425,6 @@ height: 74px;
 
 .col-2 .textContent h4{
   padding-bottom:15px;
-  width: 243px;
   height: 28px;
   font-size:20px;
   font-family: 'Poppins', sans-serif;
@@ -435,9 +434,9 @@ height: 74px;
 .col-2 .textContent p{
   font-size: 16px;
   width: 256px;
-height: 75px;
-font-family: 'Poppins', sans-serif;
-font-weight: 400;
+  height: 75px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 #h4text2{
