@@ -694,32 +694,37 @@ footer img{
   opacity: 100%; 
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .img-responsive{
-    width: 100%;
-    height: 100%;
-  }
- 
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
  
-  #col1{
-    justify-content: center;
-  }
+body{
+   display: 50%;
+ }
 
-  .autoplay{
-    display: 100%;
-    
-  }
-
-  .tableImage{
-    width: 50%;
-    margin-left:0;
-  }
+}
   
+@media only screen and (max-width: 600px) {
+ 
+body{
+   display: 50%;
+ }
+
 }
 
+@media only screen and (min-width: 768px) {
+
+ body{
+   display: 50%;
+ }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+ body{
+   display: 50%;
+ }
+
+}
 
